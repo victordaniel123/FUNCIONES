@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    <title>Funciones ejercicio 1</title>
+    <style>
+        /* Definición de estilos */
+        .custom-text {
+            text-align: center;
+        }
+        body {
+            background: url('https://pa1.aminoapps.com/6660/f37dd755b12157c06af3dd37e629956060ce9d5c_hq.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor del icono del menú y su contorno blanco transparente -->
+    <div class="menu-container">
+        <!-- Icono del menú -->
+        <div class="menu-icon">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+    </div>
+ <!-- Menú desplegable -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://victordaniel123.github.io/menu/">Inicio</a></li>
+                        <li><a href="https://victordaniel123.github.io/pagina_victor/">finalizar sesion</a></li>
+                        <li><a href="index.html">funciones ejemplo 1</a></li>
+                        <li><a href="fun2.html">funciones ejemplo 2</a></li>
+                        <li><a href="fun3.html">funciones ejemplo 3</a></li>
+
+                    </ul>
+                </div>
+
+<!-- Función para crear el texto personalizado -->
+<script>
+    function titulo(texto, tamaño, color, centrado) {
+        var elemento = document.createElement("h" + tamaño);
+        elemento.textContent = texto;
+        
+        // Aplicar color y tipo de letra
+        elemento.style.color = color;
+        elemento.style.fontFamily = "Arial, sans-serif"; // Cambia esto al tipo de letra que desees
+        
+        // Alinear el texto si es necesario
+        if (centrado) {
+            elemento.classList.add("custom-text");
+        }
+        
+        // Agregar el elemento al cuerpo del documento
+        document.body.appendChild(elemento);
+    }
+
+    // Ejemplo de uso
+    titulo("Funciones ejercicio 1", 1, "blue", true);
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+
+<html lang="es"> <!-- Inicio del elemento HTML con especificación del idioma español -->
+
+<head> <!-- Sección de encabezado del documento HTML -->
+  <meta charset="UTF-8"> <!-- Metaetiqueta para definir el juego de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Metaetiqueta para configurar la escala inicial del viewport en dispositivos móviles -->
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Funciones ejercicio 1</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+
+  <style> /*<!-- Sección de estilos CSS -->*/
+       body {
+            background: url('https://3.bp.blogspot.com/-t00crZ8Cv8I/V6fs9ShjBDI/AAAAAAAAbXo/s2RVsV9MPhUeMwF23Ml34aEWY3jSs9ptgCLcB/s1600/tumblr_n79zskox2D1qgxgluo1_500.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    #output { /*<!-- Selector CSS para el elemento con id "output" -->*/
+      margin: 80px; /*<!-- Márgenes exteriores del elemento -->*/
+      padding: 80px; /* <!-- Espaciado interno del elemento -->*/
+      border: 1px solid black; /*<!-- Borde del elemento con un píxel de ancho, sólido y de color negro -->*/
+    }
+  </style>
+
+</head>
+
+<body> <!-- Sección del cuerpo del documento HTML -->
+  
+    <div class="menu-container">
+        <!-- Icono del menú -->
+        <div class="menu-icon">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+    </div>
+ <!-- Menú desplegable -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://victordaniel123.github.io/menu/">Inicio</a></li>
+                        <li><a href="https://victordaniel123.github.io/pagina_victor/">finalizar sesion</a></li>
+                        <li><a href="index.html">funciones ejemplo 1</a></li>
+                        <li><a href="fun2.html">funciones ejemplo 2</a></li>
+                        <li><a href="fun3.html">funciones ejemplo 3</a></li>
+
+                    </ul>
+                </div>
+
+  
+  
+    <div id="output"></div> <!-- Div con id "output" donde se mostrará el texto -->
+
+  <script> /*<!-- Sección de script JavaScript -->*/
+    // Función para imprimir el texto con opciones de color, tipo de letra y centrado
+    function imprimirTexto(texto, color, tipoLetra, centrado) {
+      const outputDiv = document.getElementById('output'); // Obtiene el elemento con id "output"
+      outputDiv.innerHTML = texto; // Establece el contenido del elemento con el texto proporcionado
+      outputDiv.style.color = color; // Establece el color del texto del elemento
+      outputDiv.style.fontFamily = tipoLetra; // Establece el tipo de letra del texto del elemento
+      if (centrado) {
+        outputDiv.style.textAlign = 'center'; // Si centrado es verdadero, centra el texto en el elemento
+      }
+    }
+
+    // Ejemplo de uso de la función
+    imprimirTexto("Funciones ejercicio 3", "blue", "Arial, sans-serif", true); // Llama a la función con los parámetros específicos
+
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
